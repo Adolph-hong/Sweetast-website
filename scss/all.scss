@@ -1,2 +1,6 @@
 // 全域設定
-@import "base/default"
+@import "base/default";
+@import "base/mixin";
+
+//元件
+@import "components/header";

@@ -22,4 +22,59 @@ ul, li {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.header .nav {
+  max-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 42px;
+}
+@media (max-width: 768px) {
+  .header .nav {
+    padding: 30px 30px;
+  }
+}
+.header .nav .nav-mobile-logo {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header .nav .nav-mobile-logo {
+    display: flex;
+  }
+}
+.header .nav picture .nav-logo {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .header .nav picture .nav-logo {
+    max-width: 120px;
+  }
+}
+.header .nav .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  color: #3F5D45;
+  font-weight: 600;
+}
+.header .nav .nav-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+@media (max-width: 768px) {
+  .header .nav .nav-list {
+    display: none;
+  }
+}
+.header .nav .nav-car {
+  max-width: 24px;
+  height: auto;
 }/*# sourceMappingURL=all.css.map */

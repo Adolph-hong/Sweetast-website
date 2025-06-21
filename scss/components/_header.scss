@@ -1,0 +1,62 @@
+.header {
+    .nav {
+        max-height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 42px;
+
+        @include mobile {
+            padding: 30px 30px;
+        }
+
+        .nav-mobile-logo {
+            display: none;
+
+            @include mobile {
+                display: flex;
+            }
+        }
+
+        picture {
+            .nav-logo {
+                max-width: 250px;
+                width: 100%;
+                height: auto;
+
+                @include mobile {
+                    max-width: 120px;
+                }
+            }
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            color: #3F5D45;
+            font-weight: 600;
+
+            li {
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 40px;
+                }
+            }
+
+            @include mobile {
+                display: none;
+            }
+        }
+
+        .nav-car {
+            max-width: 24px;
+            height: auto;
+        }
+    }
+}
