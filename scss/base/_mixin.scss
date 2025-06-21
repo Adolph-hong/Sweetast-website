@@ -1,3 +1,10 @@
+@mixin footer{
+    @media (max-width: 1023px){
+        @content;
+    }
+}
+
+
 @mixin mobile{
     @media (max-width: 768px){
         @content;
