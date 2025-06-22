@@ -1,0 +1,108 @@
+.index {
+    .banner {
+        padding: 0px 42px;
+        position: relative;
+        display: flex;
+        @include cards{
+            flex-direction: column
+
+        }
+        @include mobile {
+            position: static;
+            padding: 0px 30px;
+        }
+
+        .banner-img {
+            @include bg;
+            background-image: url("https://bit.ly/2OhbMHr");
+            position: relative;
+            width: 100%;
+            height: 496px;
+
+            @include mobile {
+                height: 277px;
+            }
+        }
+
+        .card-box {
+            display: flex;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 768px;
+            height: 256px;
+            @include cards{
+                position: static;
+                width: 100%;
+                height: 180px;
+                transform: none;
+            }
+
+            .card {
+                position: relative;
+                max-width: 256px;
+                width: 100%;
+                height: auto;
+
+                .card-bg {
+                    @include bg;
+                    max-width: 256px;
+                    height: auto;
+                    width: 100%;
+                    height: 100%;
+                    filter: blur(7px);
+                    transition: filter 1s ease;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+
+                .card-bg1 {
+                    background-image: url('https://bit.ly/2R5tqwD');
+                }
+
+                .card-bg2 {
+                    background-image: url('https://bit.ly/2Dwoxd7');
+                }
+
+                .card-bg3 {
+                    background-image: url('https://bit.ly/2OUteif');
+                }
+
+                .card-overlay {
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(63, 93, 69, 0.7);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0.8;
+                    z-index: 2;
+                    transition: opacity 1s ease;
+
+                    span {
+                        @include center;
+                        font-size: 24px;
+                        color: #ffffff;
+                        writing-mode: vertical-rl;
+                        @include cards{
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .card-overlay {
+                        opacity: 0;
+                    }
+
+                    .card-bg {
+                        filter: none;
+                    }
+                }
+            }
+
+        }
+    }
+}

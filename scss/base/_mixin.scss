@@ -1,12 +1,32 @@
-@mixin footer{
-    @media (max-width: 1023px){
+@mixin footer {
+    @media (max-width: 1023px) {
         @content;
     }
 }
 
 
-@mixin mobile{
-    @media (max-width: 768px){
+@mixin mobile {
+    @media (max-width: 768px) {
         @content;
     }
 }
+
+@mixin cards{
+    @media (max-width: 854px){
+        @content;
+    }
+}
+
+@mixin bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
