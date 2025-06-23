@@ -17,6 +17,18 @@
     }
 }
 
+@mixin introduce{
+    @media (max-width: 1200px){
+        @content;
+    }
+}
+
+@mixin introduce-990{
+    @media (max-width: 990px){
+        @content;
+    }
+}
+
 @mixin bg {
     background-size: cover;
     background-position: center;
