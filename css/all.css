@@ -583,15 +583,15 @@ a {
   }
 }
 
-.produce .banner {
+.produce .banner .banner-box {
   padding: 0 42px;
 }
 @media (max-width: 768px) {
-  .produce .banner {
+  .produce .banner .banner-box {
     padding: 0;
   }
 }
-.produce .banner .banner-bg {
+.produce .banner .banner-box .banner-bg {
   position: relative;
   background-size: cover;
   background-position: center;
@@ -601,18 +601,18 @@ a {
   height: 496px;
 }
 @media (max-width: 768px) {
-  .produce .banner .banner-bg {
+  .produce .banner .banner-box .banner-bg {
     height: 277px;
   }
 }
-.produce .banner img {
+.produce .banner .banner-box img {
   max-width: 90px;
   position: absolute;
   top: 40px;
   right: 40px;
 }
 @media (max-width: 768px) {
-  .produce .banner img {
+  .produce .banner .banner-box img {
     max-width: 60px;
     top: 30px;
     right: 30px;
