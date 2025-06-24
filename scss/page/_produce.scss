@@ -33,4 +33,94 @@
             }
         }
     }
+
+    .container {
+        .container-box {
+            display: flex;
+            padding: 60px 42px 0;
+            justify-content: space-between;
+            @include mobile{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0px;
+            }
+
+            .container-left {
+                @include mobile{
+                    width: 100%;
+                    padding-bottom: 30px;
+                }
+                .dessert-box {
+                    padding-right: 20px;
+                    @include mobile{
+                        padding: 0;
+                    }
+                    .dessert-title {
+                        background-color: #3F5D45;
+                        color: #EAF0ED;
+                        font-size: 24px;
+                        font-weight: 600;
+                        padding: 16px 102px;
+                        display: block;
+                        @include mobile{
+                            padding: 16px 0;
+                            text-align: center;
+                        }
+                    }
+
+                    .dessert {
+                        display: block;
+                        color: #3F5D45;
+                        font-size: 24px;
+                        font-weight: 600;
+                        padding: 16px 64px;
+                        border: 1px solid #EAF0ED;
+                        border-top: none;
+                        @include mobile{
+                            padding: 16px 0;
+                            text-align: center;
+                        }
+                    }
+
+                    .dessert1 {
+                        background-color: #EAF0ED;
+                        border: 1px solid #EAF0ED;
+                    }
+                }
+            }
+
+            .container-right {
+                 flex: 1;
+                .card-box {
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 20px;
+                    @include card-1023{
+                        justify-content: flex-end;
+                    }
+                    @include mobile{
+                        justify-content: center;
+                        padding: 0 30px;
+                    }
+                    .card {
+                        .card-up{
+                            .dessert-img{
+                                max-width: 300px;
+                                height: 315px;
+                            }
+                        }
+                        
+                    }
+                    .card4, .card5, .card6{
+                        @include card-1023{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

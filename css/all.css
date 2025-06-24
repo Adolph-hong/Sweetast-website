@@ -617,4 +617,94 @@ a {
     top: 30px;
     right: 30px;
   }
+}
+.produce .container .container-box {
+  display: flex;
+  padding: 60px 42px 0;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .produce .container .container-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .produce .container .container-box .container-left {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+.produce .container .container-box .container-left .dessert-box {
+  padding-right: 20px;
+}
+@media (max-width: 768px) {
+  .produce .container .container-box .container-left .dessert-box {
+    padding: 0;
+  }
+}
+.produce .container .container-box .container-left .dessert-box .dessert-title {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 102px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .produce .container .container-box .container-left .dessert-box .dessert-title {
+    padding: 16px 0;
+    text-align: center;
+  }
+}
+.produce .container .container-box .container-left .dessert-box .dessert {
+  display: block;
+  color: #3F5D45;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 64px;
+  border: 1px solid #EAF0ED;
+  border-top: none;
+}
+@media (max-width: 768px) {
+  .produce .container .container-box .container-left .dessert-box .dessert {
+    padding: 16px 0;
+    text-align: center;
+  }
+}
+.produce .container .container-box .container-left .dessert-box .dessert1 {
+  background-color: #EAF0ED;
+  border: 1px solid #EAF0ED;
+}
+.produce .container .container-box .container-right {
+  flex: 1;
+}
+.produce .container .container-box .container-right .card-box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 1023px) {
+  .produce .container .container-box .container-right .card-box {
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .produce .container .container-box .container-right .card-box {
+    justify-content: center;
+    padding: 0 30px;
+  }
+}
+.produce .container .container-box .container-right .card-box .card .card-up .dessert-img {
+  max-width: 300px;
+  height: 315px;
+}
+@media (max-width: 1023px) {
+  .produce .container .container-box .container-right .card-box .card4, .produce .container .container-box .container-right .card-box .card5, .produce .container .container-box .container-right .card-box .card6 {
+    display: none;
+  }
 }/*# sourceMappingURL=all.css.map */
