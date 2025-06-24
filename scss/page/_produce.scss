@@ -39,7 +39,8 @@
             display: flex;
             padding: 60px 42px 0;
             justify-content: space-between;
-            @include mobile{
+
+            @include mobile {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -47,15 +48,18 @@
             }
 
             .container-left {
-                @include mobile{
+                @include mobile {
                     width: 100%;
                     padding-bottom: 30px;
                 }
+
                 .dessert-box {
                     padding-right: 20px;
-                    @include mobile{
+
+                    @include mobile {
                         padding: 0;
                     }
+
                     .dessert-title {
                         background-color: #3F5D45;
                         color: #EAF0ED;
@@ -63,7 +67,8 @@
                         font-weight: 600;
                         padding: 16px 102px;
                         display: block;
-                        @include mobile{
+
+                        @include mobile {
                             padding: 16px 0;
                             text-align: center;
                         }
@@ -77,7 +82,8 @@
                         padding: 16px 64px;
                         border: 1px solid #EAF0ED;
                         border-top: none;
-                        @include mobile{
+
+                        @include mobile {
                             padding: 16px 0;
                             text-align: center;
                         }
@@ -91,36 +97,87 @@
             }
 
             .container-right {
-                 flex: 1;
+                flex: 1;
+
                 .card-box {
                     display: flex;
                     width: 100%;
                     flex-wrap: wrap;
                     justify-content: space-between;
                     gap: 20px;
-                    @include card-1023{
+
+                    @include card-1023 {
                         justify-content: flex-end;
                     }
-                    @include mobile{
+
+                    @include mobile {
                         justify-content: center;
                         padding: 0 30px;
                     }
+
                     .card {
-                        .card-up{
-                            .dessert-img{
+                        .card-up {
+                            .dessert-img {
                                 max-width: 300px;
                                 height: 315px;
                             }
                         }
-                        
+
                     }
-                    .card4, .card5, .card6{
-                        @include card-1023{
+
+                    .card4,
+                    .card5,
+                    .card6 {
+                        @include card-1023 {
                             display: none;
                         }
                     }
                 }
             }
+        }
+    }
+
+    .page {
+        .page-big-box {
+            display: flex;
+            justify-content: flex-end;
+            padding: 30px 42px 60px;
+            @include card-1023{
+                justify-content: center;
+            }
+
+            .page-list {
+                display: flex;
+                .back-next{
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 60px;
+                    height: 60px;
+                    border: 1px solid #EAF0ED;
+                }
+                .page{
+                    font-size: 20px;
+                    color: #3F5D45;
+                    display: flex;
+                    width: 60px;
+                    height: 60px;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid #EAF0ED;
+                    border-left: none;
+                }
+                .page1{
+                    background-color: #3F5D45;
+                    color: #EAF0ED;
+                    
+                }
+                .page3{
+                    border-right: none;
+                }
+            }
+
         }
     }
 }

@@ -704,7 +704,48 @@ a {
   height: 315px;
 }
 @media (max-width: 1023px) {
-  .produce .container .container-box .container-right .card-box .card4, .produce .container .container-box .container-right .card-box .card5, .produce .container .container-box .container-right .card-box .card6 {
+  .produce .container .container-box .container-right .card-box .card4,
+  .produce .container .container-box .container-right .card-box .card5,
+  .produce .container .container-box .container-right .card-box .card6 {
     display: none;
   }
+}
+.produce .page .page-big-box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 42px 60px;
+}
+@media (max-width: 1023px) {
+  .produce .page .page-big-box {
+    justify-content: center;
+  }
+}
+.produce .page .page-big-box .page-list {
+  display: flex;
+}
+.produce .page .page-big-box .page-list .back-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #EAF0ED;
+}
+.produce .page .page-big-box .page-list .page {
+  font-size: 20px;
+  color: #3F5D45;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EAF0ED;
+  border-left: none;
+}
+.produce .page .page-big-box .page-list .page1 {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+.produce .page .page-big-box .page-list .page3 {
+  border-right: none;
 }/*# sourceMappingURL=all.css.map */
