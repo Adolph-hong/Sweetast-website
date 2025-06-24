@@ -1,0 +1,29 @@
+.produce{
+    .banner{
+        padding: 0 42px;
+        @include mobile{
+            padding: 0;
+        }
+        .banner-bg{
+            position: relative;
+            @include bg;
+            background-image: url("https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=2105&q=80");
+            width: 100%;
+            height: 496px;
+            @include mobile{
+                height: 277px;
+            }
+        }
+        img{
+            max-width: 90px;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            @include mobile{
+                max-width: 60px;
+                top: 30px;
+                right: 30px;
+            }
+        }
+    }
+}

@@ -581,4 +581,40 @@ a {
   .index .card-big-box .card-box .card3 {
     display: none;
   }
+}
+
+.produce .banner {
+  padding: 0 42px;
+}
+@media (max-width: 768px) {
+  .produce .banner {
+    padding: 0;
+  }
+}
+.produce .banner .banner-bg {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=2105&q=80");
+  width: 100%;
+  height: 496px;
+}
+@media (max-width: 768px) {
+  .produce .banner .banner-bg {
+    height: 277px;
+  }
+}
+.produce .banner img {
+  max-width: 90px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+@media (max-width: 768px) {
+  .produce .banner img {
+    max-width: 60px;
+    top: 30px;
+    right: 30px;
+  }
 }/*# sourceMappingURL=all.css.map */
