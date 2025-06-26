@@ -860,6 +860,12 @@ a {
     width: 300px;
   }
 }
+.member .container .container-box .container-box-left .left-up-bg .input-group input::-moz-placeholder {
+  color: #8DA291;
+}
+.member .container .container-box .container-box-left .left-up-bg .input-group input::placeholder {
+  color: #8DA291;
+}
 .member .container .container-box .container-box-left .left-up-bg .input-group .icon {
   position: absolute;
   top: 46px;
