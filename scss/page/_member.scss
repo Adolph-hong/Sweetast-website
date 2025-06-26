@@ -1,0 +1,208 @@
+.member {
+    .container {
+        .container-box {
+            padding: 0 122px 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include card-1023{
+                padding-bottom: 60px;
+            }
+
+            @include mobile {
+                padding: 0;
+            }
+
+            .container-box-left {
+                @include mobile {
+                    max-width: 375px;
+                    width: 100%;
+                }
+
+                .left-up-bg {
+                    background-color: #3F5D45;
+
+                    .left-title {
+                        font-size: 36px;
+                        color: #EAF0ED;
+                        padding: 40px 123px;
+
+                        @include mobile {
+                            display: flex;
+                            justify-content: center;
+                            padding: 30px 0;
+                            max-width: 375px;
+                            width: 100%;
+                        }
+                    }
+
+                    .left-social {
+                        display: none;
+
+                        @include card-1023 {
+                            display: flex;
+                            justify-content: center;
+                            background-color: #EAF0ED;
+                            padding: 30px;
+                        }
+
+                        .social-box {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            @include mobile {
+                                max-width: 375px;
+                                width: 100%;
+                            }
+
+                            .social {
+                                background-color: #FFFFFF;
+                                max-width: 330px;
+                                height: 56px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 0 10px;
+
+                                @include mobile {
+                                    max-width: 375px;
+                                    width: 100%;
+                                }
+
+                                img {
+                                    max-width: 108px;
+                                    width: 100%;
+                                    height: 20px;
+                                }
+                            }
+
+                            .google {
+                                border-inline: 1px solid #EAF0ED;
+                            }
+                        }
+                    }
+
+                    .input-group {
+                        display: flex;
+                        position: relative;
+                        justify-content: center;
+                        padding-top: 30px;
+                        padding-bottom: 16px;
+                        @include mobile{
+                            width: fit-content;
+                            margin: 0 auto;
+                        }
+
+                        input {
+                            display: flex;
+                            color: #8DA291;
+                            padding: 18px 0 16px 64px;
+                            max-width: 330px;
+                            width: 100%;
+
+                            @include mobile {
+                                width: 300px;
+                            }
+                        }
+
+                        .icon {
+                            position: absolute;
+                            top: 46px;
+                            left: 50px;
+                            @include mobile{
+
+                                left: 20px;
+                            }
+                        }
+
+                    }
+
+                    .remember-box {
+                        padding: 0 30px 25px;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        input {
+                            width: 16px;
+                            height: 16px;
+                        }
+
+                        label {
+                            color: #EAF0ED;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .login {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                        padding: 16px 147px;
+                        background-color: #FFE180;
+                        border: 1px solid #FFE180;
+
+                        @include mobile {
+                            padding: 16px 0;
+                            max-width: 375px;
+                            width: 100%;
+                        }
+
+                        span {
+                            font-size: 24px;
+                            font-weight: 600;
+                            color: #3F5D45;
+                        }
+                    }
+                }
+            }
+
+            .container-box-right {
+                background-color: #EAF0ED;
+                padding: 0 30px 0;
+
+                @include card-1023 {
+                    display: none;
+                }
+
+                .right-box {
+                    .title {
+                        display: block;
+                        color: #8DA291;
+                        font-size: 24px;
+                        font-weight: 300;
+                        padding: 40px 30px 36px;
+                    }
+
+                    .social-box {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+                        padding-bottom: 41px;
+
+                        .social {
+                            background-color: #FFFFFF;
+                            max-width: 330px;
+                            width: 100%;
+                            height: 56px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 108px;
+                                height: 20px;
+                            }
+                        }
+
+                        .google {
+                            border-inline: 1px solid #EAF0ED;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
