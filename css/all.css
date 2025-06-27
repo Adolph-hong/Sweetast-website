@@ -269,6 +269,41 @@ a {
   border: 1px solid #EAF0ED;
 }
 
+.order-box {
+  max-width: 300px;
+  width: 100%;
+}
+.order-box .title {
+  display: flex;
+  justify-content: center;
+  background-color: #EAF0ED;
+  color: #8DA291;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 0;
+}
+.order-box .text-box {
+  padding: 0 20px;
+  border: 1px solid #EAF0ED;
+}
+.order-box .text-box .note {
+  color: #8DA291;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+}
+.order-box .text-box .note1 {
+  padding: 16px 0 8px;
+}
+.order-box .total {
+  color: #8DA291;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
 .index .banner {
   padding: 0px 42px;
   position: relative;
@@ -1255,4 +1290,8 @@ a {
     justify-content: center;
     align-items: center;
   }
+}
+
+.delivery .delivery-container {
+  padding: 30px 122px 65px;
 }/*# sourceMappingURL=all.css.map */
