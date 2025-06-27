@@ -1,0 +1,313 @@
+.car {
+    .car-container {
+        padding: 30px 42px 40px;
+
+        @include mobile {
+            padding: 0;
+        }
+
+        .car-box {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            @include card-1023 {
+                flex-direction: column;
+                justify-content: center;
+            }
+            @include mobile{
+                gap: 32px;
+            }
+
+            .car-box-left {
+                max-width: 620px;
+                width: 100%;
+
+                @include mobile {
+                    max-width: 768px;
+                }
+
+                .title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #EAF0ED;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #3F5D45;
+                    max-width: 620px;
+                    width: 100%;
+                    padding: 16px 0;
+
+                    @include mobile {
+                        max-width: 768px;
+                    }
+                }
+
+                .commodity-box {
+                    display: flex;
+                    flex-direction: column;
+
+                    @include mobile {
+                        padding: 0 30px;
+                    }
+
+                    .commodity {
+                        display: flex;
+                        gap: 16px;
+                        align-items: center;
+
+
+                        .dessert {
+                            width: 110px;
+                            aspect-ratio: 1 / 1;
+                            object-fit: cover;
+
+                            @include mobile {
+                                aspect-ratio: unset;
+                                max-width: 157px;
+                                width: 100%;
+                                height: 106px;
+                            }
+                        }
+
+                        .information {
+                            @include mobile {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 8px;
+                            }
+
+                            .name-box {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+                                color: #3F5D45;
+
+                                @include mobile {
+                                    gap: 0;
+                                }
+
+                                .name {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .quantity-box-sm {
+                                display: none;
+
+                                @include mobile {
+                                    display: flex;
+                                }
+
+                                .quantity {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 48px;
+                                    aspect-ratio: 1 / 1;
+                                    color: #3F5D45;
+                                    border: 1px solid #EAF0ED;
+                                }
+
+                                .quantity2 {
+                                    border-inline: none;
+                                }
+                            }
+                        }
+
+                        .quantity-box {
+                            display: flex;
+
+                            @include mobile {
+                                display: none;
+                            }
+
+                            .quantity {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 48px;
+                                aspect-ratio: 1 / 1;
+                                color: #3F5D45;
+                                border: 1px solid #EAF0ED;
+                            }
+
+                            .quantity2 {
+                                border-inline: none;
+                            }
+                        }
+
+                        .price {
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #3F5D45;
+
+                            @include mobile {
+                                display: none;
+                            }
+                        }
+
+                        .delete {
+                            @include mobile {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .commodity1 {
+                        padding-top: 33px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #EAF0ED;
+
+                        @include mobile {
+                            padding-bottom: 8px;
+                            border-bottom: none;
+                        }
+                    }
+
+                    .price-sm {
+                        display: none;
+
+                        @include mobile {
+                            display: flex;
+                            justify-content: flex-end;
+                            padding: 9px 0;
+                            max-width: 317px;
+                            width: 100%;
+                            border-top: 1px solid #EAF0ED;
+                            border-bottom: 1px solid #EAF0ED;
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: #3F5D45;
+                        }
+                    }
+
+                    .commodity2 {
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        border-bottom: 1px solid #EAF0ED;
+
+                        @include mobile {
+                            padding-bottom: 8px;
+                            border-bottom: none;
+                        }
+                    }
+
+                    .commodity3 {
+                        padding-top: 20px;
+
+                        @include mobile {
+                            padding-bottom: 8px;
+                        }
+                    }
+                }
+            }
+
+            .car-box-right {
+                max-width: 300px;
+                width: 100%;
+
+                @include mobile {
+                    margin: 0 auto;
+                    max-width: 375px;
+                    width: 100%;
+                }
+
+                .order-big-box {
+                    max-width: 300px;
+                    width: 100%;
+                    @include mobile{
+                        max-width: 375px;
+                    }
+
+                    .order-box {
+                        background-color: #3F5D45;
+                        padding: 0 20px 18px;
+                        width: 100%;
+
+                        @include mobile {
+                            background-color: #FFFFFF;
+                            padding: 0 30px 0;
+                        }
+
+                        .title {
+                            display: flex;
+                            justify-content: center;
+                            color: #EAF0ED;
+                            font-size: 24px;
+                            font-weight: 600;
+                            padding: 16px 0;
+                            border-bottom: 1px solid #EAF0ED;
+
+                            @include mobile {
+                                background-color: #EAF0ED;
+                                color: #3F5D45;
+
+
+                            }
+                        }
+
+                        .note {
+                            color: #EAF0ED;
+                            display: flex;
+                            justify-content: space-between;
+                            font-weight: 300;
+
+                            @include mobile {
+                                color: #3F5D45;
+                            }
+                        }
+
+                        .note1 {
+                            padding: 16px 0 8px;
+                        }
+
+                    }
+
+                    .total {
+                        color: #EAF0ED;
+                        font-size: 20px;
+                        font-weight: 600;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 16px 0;
+
+                        @include mobile {
+                            color: #3F5D45;
+                        }
+                    }
+
+                    .check {
+                        background-color: #FFE180;
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #3F5D45;
+                        padding: 16px 0;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        @include mobile{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .check-sm{
+                display: none;
+                @include mobile{
+                    background-color: #FFE180;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #3F5D45;
+                    padding: 16px 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
