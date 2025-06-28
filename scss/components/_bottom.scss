@@ -1,0 +1,14 @@
+.bottom {
+    width: 100%;
+    background-color: #FFE180;
+    color: #3F5D45;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: auto;
+    @include mobile{
+        width: 100%;
+    }
+}
