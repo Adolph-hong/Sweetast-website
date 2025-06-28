@@ -1,0 +1,91 @@
+.success {
+    .success-box {
+        display: flex;
+        padding: 30px 42px 60px;
+
+        @include mobile {
+            padding: 0;
+            flex-direction: column;
+        }
+
+        .success-bg {
+            @include bg;
+            background-image: url('https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=1600&q=80');
+            position: relative;
+            width: 100%;
+            height: 460px;
+
+            @include mobile {
+                max-width: 768px;
+                height: 518px;
+            }
+
+            .success-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                @include center;
+
+                .circle-box {
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 30px;
+
+                    .circle {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: #3F5D45;
+                    }
+
+                    .circle1 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .line {
+                        width: 65px;
+                        height: 1px;
+                        background-color: #3F5D45;
+                    }
+                }
+
+                .pay-img {
+                    max-width: 190px;
+                    padding-bottom: 50px;
+                }
+
+                .next {
+                    background-color: #FFE180;
+                    color: #3F5D45;
+                    padding: 16px 0;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 24px;
+                    font-weight: 600;
+                    width: 300px;
+
+                    @include mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .next{
+            background-color: #FFE180;
+            color: #3F5D45;
+            padding: 16px 0;
+            display: none;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 600;
+            width: 100%;
+
+            @include mobile {
+                display: flex;
+            }
+        }
+    }
+}
