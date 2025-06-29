@@ -67,6 +67,11 @@
             font-size: 24px;
             font-weight: 600;
             border: 1px solid #EAF0ED;
+            transition: background-color 0.3s ease, color 0.3s ease;
+                    &:hover {
+                        background-color: #3F5D45;
+                        color: #EAF0ED;
+                    }
         }
     }
 }

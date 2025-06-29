@@ -68,15 +68,24 @@ a {
   align-items: center;
   width: 100%;
   height: 40px;
+  transition: transform 0.3s ease;
+}
+.header .nav .nav-list li a:hover {
+  transform: scale(1.5);
 }
 @media (max-width: 768px) {
-  .header .nav .nav-list {
+  .header .nav .nav-list li {
     display: none;
   }
 }
 .header .nav .nav-car img {
+  display: inline-block;
   max-width: 24px;
   height: auto;
+  transition: transform 0.3s ease;
+}
+.header .nav .nav-car img:hover {
+  transform: scale(1.5);
 }
 
 .footer .footer-up {
@@ -123,6 +132,10 @@ a {
   height: 56px;
   background-color: #FFE180;
   position: relative;
+  transition: background-color 0.3s ease, ease;
+}
+.footer .footer-up .footer-up-box .up-right a .up-right-colorBox:hover {
+  opacity: 0.7;
 }
 .footer .footer-up .footer-up-box .up-right a .up-right-colorBox .r-arror {
   width: 16px;
@@ -195,6 +208,10 @@ a {
 .footer .footer-dw .footer-dw-box .dw-dw .dw-dw-left a .dw-dw-left-icon {
   width: 32px;
   height: 32px;
+  transition: transform 0.3s ease;
+}
+.footer .footer-dw .footer-dw-box .dw-dw .dw-dw-left a .dw-dw-left-icon:hover {
+  transform: scale(0.8);
 }
 .footer .footer-dw .footer-dw-box .dw-dw .dw-dw-right {
   color: #3F5D45;
@@ -267,6 +284,11 @@ a {
   font-size: 24px;
   font-weight: 600;
   border: 1px solid #EAF0ED;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.card .card-dw .shop:hover {
+  background-color: #3F5D45;
+  color: #EAF0ED;
 }
 
 .order-box {
@@ -364,6 +386,10 @@ a {
   font-size: 24px;
   font-weight: 600;
   margin-top: auto;
+  transition: background-color 0.3s ease, ease;
+}
+.bottom:hover {
+  opacity: 0.8;
 }
 @media (max-width: 768px) {
   .bottom {
@@ -769,6 +795,10 @@ a {
   padding: 16px 64px;
   border: 1px solid #EAF0ED;
   border-top: none;
+  transition: background-color 0.3s ease, ease;
+}
+.produce .container .container-box .container-left .dessert-box .dessert:hover {
+  background-color: #EAF0ED;
 }
 @media (max-width: 768px) {
   .produce .container .container-box .container-left .dessert-box .dessert {
@@ -1000,6 +1030,10 @@ a {
   padding: 16px 147px;
   background-color: #FFE180;
   border: 1px solid #FFE180;
+  transition: background-color 0.3s ease, ease;
+}
+.member .container .container-box .container-box-left .left-up-bg .login:hover {
+  opacity: 0.8;
 }
 @media (max-width: 768px) {
   .member .container .container-box .container-box-left .left-up-bg .login {
@@ -1043,6 +1077,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease;
+}
+.member .container .container-box .container-box-right .right-box .social-box .social:hover {
+  transform: scale(1.1);
 }
 .member .container .container-box .container-box-right .right-box .social-box .social img {
   width: 108px;
@@ -1194,6 +1232,14 @@ a {
   color: #3F5D45;
   border: 1px solid #EAF0ED;
 }
+.car .car-container .car-box .car-box-left .commodity-box .commodity .quantity-box .quantity1 img,
+.car .car-container .car-box .car-box-left .commodity-box .commodity .quantity-box .quantity3 img {
+  transition: transform 0.3s ease;
+}
+.car .car-container .car-box .car-box-left .commodity-box .commodity .quantity-box .quantity1:hover img,
+.car .car-container .car-box .car-box-left .commodity-box .commodity .quantity-box .quantity3:hover img {
+  transform: scale(1.5);
+}
 .car .car-container .car-box .car-box-left .commodity-box .commodity .quantity-box .quantity2 {
   border-inline: none;
 }
@@ -1206,6 +1252,12 @@ a {
   .car .car-container .car-box .car-box-left .commodity-box .commodity .price {
     display: none;
   }
+}
+.car .car-container .car-box .car-box-left .commodity-box .commodity .delete img {
+  transition: transform 0.3s ease;
+}
+.car .car-container .car-box .car-box-left .commodity-box .commodity .delete:hover img {
+  transform: scale(1.5);
 }
 @media (max-width: 768px) {
   .car .car-container .car-box .car-box-left .commodity-box .commodity .delete {
@@ -1342,6 +1394,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease, ease;
+}
+.car .car-container .car-box .car-box-right .order-big-box .check:hover {
+  opacity: 0.8;
 }
 @media (max-width: 768px) {
   .car .car-container .car-box .car-box-right .order-big-box .check {
@@ -1590,6 +1646,11 @@ a {
   font-size: 24px;
   font-weight: 600;
   width: 300px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.success .success-box .success-bg .success-text .next:hover {
+  background-color: #3F5D45;
+  color: #EAF0ED;
 }
 @media (max-width: 768px) {
   .success .success-box .success-bg .success-text .next {

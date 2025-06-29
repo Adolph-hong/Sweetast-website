@@ -65,6 +65,12 @@
                     font-size: 24px;
                     font-weight: 600;
                     width: 300px;
+                    transition: background-color 0.3s ease, color 0.3s ease;
+
+                    &:hover {
+                        background-color: #3F5D45;
+                        color: #EAF0ED;
+                    }
 
                     @include mobile {
                         display: none;
@@ -73,7 +79,7 @@
             }
         }
 
-        .next{
+        .next {
             background-color: #FFE180;
             color: #3F5D45;
             padding: 16px 0;

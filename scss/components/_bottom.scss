@@ -8,7 +8,13 @@
     font-size: 24px;
     font-weight: 600;
     margin-top: auto;
-    @include mobile{
+    transition: background-color 0.3s ease, ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    @include mobile {
         width: 100%;
     }
 }

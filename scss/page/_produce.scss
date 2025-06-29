@@ -82,7 +82,10 @@
                         padding: 16px 64px;
                         border: 1px solid #EAF0ED;
                         border-top: none;
-
+                        transition: background-color 0.3s ease, ease;
+                        &:hover {
+                            background-color: #EAF0ED;
+                        }
                         @include mobile {
                             padding: 16px 0;
                             text-align: center;

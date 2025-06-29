@@ -15,7 +15,8 @@
                 flex-direction: column;
                 justify-content: center;
             }
-            @include mobile{
+
+            @include mobile {
                 gap: 32px;
             }
 
@@ -56,7 +57,8 @@
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        @include mobile{
+
+                        @include mobile {
                             gap: 8px;
                             justify-content: flex-start;
 
@@ -138,6 +140,17 @@
                                 border: 1px solid #EAF0ED;
                             }
 
+                            .quantity1,
+                            .quantity3 {
+                                img {
+                                    transition: transform 0.3s ease;
+                                }
+
+                                &:hover img {
+                                    transform: scale(1.5);
+                                }
+                            }
+
                             .quantity2 {
                                 border-inline: none;
                             }
@@ -154,6 +167,14 @@
                         }
 
                         .delete {
+                            img {
+                                transition: transform 0.3s ease;
+                            }
+
+                            &:hover img{
+                                transform: scale(1.5);
+                            }
+
                             @include mobile {
                                 display: none;
                             }
@@ -222,7 +243,8 @@
                 .order-big-box {
                     max-width: 300px;
                     width: 100%;
-                    @include mobile{
+
+                    @include mobile {
                         max-width: 375px;
                     }
 
@@ -293,15 +315,22 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        @include mobile{
+                        transition: background-color 0.3s ease, ease;
+                        &:hover {
+                            opacity: 0.8;
+                        }
+
+                        @include mobile {
                             display: none;
                         }
                     }
                 }
             }
-            .check-sm{
+
+            .check-sm {
                 display: none;
-                @include mobile{
+
+                @include mobile {
                     background-color: #FFE180;
                     font-size: 24px;
                     font-weight: 600;
