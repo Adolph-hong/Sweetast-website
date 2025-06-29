@@ -54,8 +54,13 @@
 
                     .commodity {
                         display: flex;
-                        gap: 16px;
                         align-items: center;
+                        justify-content: space-between;
+                        @include mobile{
+                            gap: 8px;
+                            justify-content: flex-start;
+
+                        }
 
 
                         .dessert {
@@ -231,7 +236,7 @@
                             padding: 0 30px 0;
                         }
 
-                        .title {
+                        .car-title {
                             display: flex;
                             justify-content: center;
                             color: #EAF0ED;
