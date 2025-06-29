@@ -1,0 +1,180 @@
+.mail-bill {
+    .mail-bill-container {
+        .container-box {
+            padding: 30px 122px 65px;
+            display: flex;
+            justify-content: space-between;
+
+            @include card-1023 {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                padding: 30px 60px 65px;
+
+            }
+
+            @include mobile {
+                padding: 0;
+            }
+
+            .container-left {
+                display: flex;
+                flex-direction: column;
+                max-width: 460px;
+                width: 100%;
+                background-color: #3F5D45;
+                height: fit-content;
+
+                @include mobile {
+                    max-width: 768px;
+                }
+
+                .date {
+                    padding: 30px 40px;
+
+                    @include mobile {
+                        padding: 30px;
+                    }
+
+                    .top {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .title {
+                            display: flex;
+                            font-size: 36px;
+                            font-weight: 600;
+                            color: #EAF0ED;
+                        }
+
+                        .circle-box {
+                            display: flex;
+                            align-items: center;
+
+                            .circle {
+                                width: 20px;
+                                height: 20px;
+                                border: 1px solid #8DA291;
+                                border-radius: 50%;
+                            }
+
+                            .circle1,
+                            .circle2 {
+                                border: 1px solid #EAF0ED;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #EAF0ED;
+                            }
+
+                            .circle3 {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                .in-circle {
+                                    width: 14px;
+                                    height: 14px;
+                                    border-radius: 50%;
+                                    background-color: #EAF0ED;
+                                }
+                            }
+
+                            .line {
+                                width: 50px;
+                                height: 1px;
+                                background-color: #8DA291;
+                            }
+                        }
+                    }
+
+                    .bill-box {
+                        display: flex;
+                        width: 100%;
+                        padding-top: 30px;
+
+                        .bill {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 14px 0;
+                            font-size: 20px;
+                            font-weight: 600;
+                            width: 100%;
+                        }
+
+                        .send {
+                            border: 1px solid #EAF0ED;
+                            color: #EAF0ED;
+                        }
+
+                        .mail {
+                            background-color: #EAF0ED;
+                            color: #3F5D45;
+                            border: 1px solid #EAF0ED;
+                        }
+
+                    }
+
+                    .form {
+                        padding-top: 30px;
+
+                        .form-group-address {
+                            .address-box {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .adress-text {
+                                    font-weight: 600;
+                                    color: #EAF0ED;
+                                    font-size: 20px;
+                                    padding-bottom: 8px;
+                                }
+
+                            }
+
+                        
+                            .number {
+                                color: #EAF0ED;
+                                font-size: 20px;
+                                font-weight: 600;
+                                padding-top: 16px;
+                                padding-bottom: 8px;
+                                display: block;
+                            }
+
+                            input {
+                                font-weight: 300;
+                                color: #8DA291;
+                                padding: 17px 20px 17px;
+                                display: block;
+                                width: 100%;
+                            }
+                        }
+
+                    }
+                }
+                .bottom{
+                    margin-top: 0;
+                }
+            }
+
+            .container-right {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                @include card-1023 {
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: center;
+                }
+
+                @include mobile {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

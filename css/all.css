@@ -1958,4 +1958,160 @@ a {
   .bill .bill-container .container-box .container-right {
     display: none;
   }
+}
+
+.mail-bill .mail-bill-container .container-box {
+  padding: 30px 122px 65px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .mail-bill .mail-bill-container .container-box {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 30px 60px 65px;
+  }
+}
+@media (max-width: 768px) {
+  .mail-bill .mail-bill-container .container-box {
+    padding: 0;
+  }
+}
+.mail-bill .mail-bill-container .container-box .container-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  width: 100%;
+  background-color: #3F5D45;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (max-width: 768px) {
+  .mail-bill .mail-bill-container .container-box .container-left {
+    max-width: 768px;
+  }
+}
+.mail-bill .mail-bill-container .container-box .container-left .date {
+  padding: 30px 40px;
+}
+@media (max-width: 768px) {
+  .mail-bill .mail-bill-container .container-box .container-left .date {
+    padding: 30px;
+  }
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .top {
+  display: flex;
+  justify-content: space-between;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .top .title {
+  display: flex;
+  font-size: 36px;
+  font-weight: 600;
+  color: #EAF0ED;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .top .circle-box {
+  display: flex;
+  align-items: center;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .top .circle-box .circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #8DA291;
+  border-radius: 50%;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .top .circle-box .circle1,
+.mail-bill .mail-bill-container .container-box .container-left .date .top .circle-box .circle2 {
+  border: 1px solid #EAF0ED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAF0ED;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .top .circle-box .circle3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .top .circle-box .circle3 .in-circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #EAF0ED;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .top .circle-box .line {
+  width: 50px;
+  height: 1px;
+  background-color: #8DA291;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .bill-box {
+  display: flex;
+  width: 100%;
+  padding-top: 30px;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .bill-box .bill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .bill-box .send {
+  border: 1px solid #EAF0ED;
+  color: #EAF0ED;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .bill-box .mail {
+  background-color: #EAF0ED;
+  color: #3F5D45;
+  border: 1px solid #EAF0ED;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .form {
+  padding-top: 30px;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .form .form-group-address .address-box {
+  display: flex;
+  justify-content: space-between;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .form .form-group-address .address-box .adress-text {
+  font-weight: 600;
+  color: #EAF0ED;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .form .form-group-address .number {
+  color: #EAF0ED;
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  display: block;
+}
+.mail-bill .mail-bill-container .container-box .container-left .date .form .form-group-address input {
+  font-weight: 300;
+  color: #8DA291;
+  padding: 17px 20px 17px;
+  display: block;
+  width: 100%;
+}
+.mail-bill .mail-bill-container .container-box .container-left .bottom {
+  margin-top: 0;
+}
+.mail-bill .mail-bill-container .container-box .container-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 1023px) {
+  .mail-bill .mail-bill-container .container-box .container-right {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .mail-bill .mail-bill-container .container-box .container-right {
+    display: none;
+  }
 }/*# sourceMappingURL=all.css.map */
